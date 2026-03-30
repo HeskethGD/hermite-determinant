@@ -1,148 +1,221 @@
 \documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{geometry}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
 \geometry{a4paper, margin=1in}
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\title{
+    {\small\textit{English translation of Hermite's}} \\[0.5em] 
+    \MakeUppercase{Extract from a letter of \\ M. \textit{Ch.\ Hermite} to M. \textit{L.\ Fuchs}.}
+    \\[0.5em] {\small \textit{Journal für die reine und angewandte Mathematik} 82, 343-347 (1877)}
+    }
+\author{Charles Hermite \\ Paris }
+\date{29 June, 1876} 
 
 \begin{document}
+\maketitle
 
-\begin{center}
-{\bf Excerpt from a letter by M. Ch. Hermite addressed to M. L. Fuchs}
-\end{center}
+\medskip
 
-\hrule
+Let
 
-\noindent Let
 \begin{equation*}
-Z(x) \;=\; \frac{H'(x)}{H(x)} ,
+Z(x) = \frac{H'(x)}{H(x)};
 \end{equation*}
-and, with the help of this function, one can represent every elliptic function, having periods \(2K\) and \(2iK'\), by a formula entirely analogous to that of a rational fraction decomposed into simple fractions, namely:
 
-\begin{equation}
-\begin{split}
-F(x) \;=\; \text{const.} &\;+\; A\,Z(x-a) \;+\; A_1\,D_x Z(x-a) \;+\; A_2\,D_x^2 Z(x-a) \;+\; \cdots
-\\
-&\;+\; B\,Z(x-b) \;+\; B_1\,D_x Z(x-b) \;+\; B_2\,D_x^2 Z(x-b) \;+\; \cdots
-\\[-6pt]
-&\qquad\qquad\qquad\qquad \vdots \qquad \vdots \qquad \vdots \qquad \vdots \qquad \vdots \qquad \vdots
-\\[-6pt]
-&\;+\; L\,Z(x-\ell) \;+\; L_1\,D_x Z(x-\ell) \;+\; L_2\,D_x^2 Z(x-\ell) \;+\; \cdots
-\end{split}
-\end{equation}
+\noindent one can then, with the aid of this function, represent every uniform function with periods $2K$ and $2iK'$ by a formula entirely analogous to that of a rational fraction decomposed into partial fractions, namely:
+\begin{align*}
+F(x)' &= \text{const.} + AZ(x-a) + A_1 D_x Z(x-a) + A_2 D_x^2 Z(x-a) + \cdots \\
+&\quad + BZ(x-b) + B_1 D_x Z(x-b) + B_2 D_x^2 Z(x-b) + \cdots \\
+&\quad \cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\\
+&\quad + LZ(x-l) + L_1 D_x Z(x-l) + L_2 D_x^2 Z(x-l) + \cdots
+\end{align*}
 
-where the constants \(A,\,B,\,\ldots,\,L\) are essentially required to satisfy the condition
+\noindent where the constants $A$, $B$, \ldots $L$ must satisfy the condition:
+\begin{equation*}
+A + B + \cdots + L = 0.
+\end{equation*}
 
-\begin{equation}
-A \;+\; B \;+\; \cdots \;+\; L \;=\; 0 .
-\end{equation}
+\noindent It is this expression, which I have used in many circumstances, that I shall employ in the search for the coordinates of a plane cubic as an explicit function of a parameter. To this end I set:
+\begin{align*}
+x &= x_0 + A\,Z(t-a) + B\,Z(t-b) + C\,Z(t-c),\\
+y &= y_0 + A'Z(t-a) + B'Z(t-b) + C'Z(t-c),
+\end{align*}
 
-This expression, which I have used in many circumstances, I now employ in order to seek the coordinates of a planar cubic surface in explicit form in terms of a parameter. I set:
+\noindent with the conditions:
+\begin{equation*}
+A + B + C = 0, \qquad A' + B' + C' = 0,
+\end{equation*}
 
-\begin{align}
-x &= x_0 \;+\; A\,Z(t-a) \;+\; B\,Z(t-b) \;+\; C\,Z(t-c), \\
-y &= y_0 \;+\; A'\,Z(t-a) \;+\; B'\,Z(t-b) \;+\; C'\,Z(t-c),
-\end{align}
-
-with the conditions
-\begin{equation}
-A \;+\; B \;+\; C \;=\; 0,\qquad
-A' \;+\; B' \;+\; C' \;=\; 0,
-\end{equation}
-so that the coordinates \(x\) and \(y\) will be linear functions of the two differences
-\(Z(t-a)-Z(t-c)\) and \(Z(t-b)-Z(t-c)\).
-That being so, I remark that \(x^2\), \(xy\), \(y^2\) being doubly periodic uniform functions with periods \(2K\) and \(2iK'\), are expressed linearly, on the one hand by these two differences, and on the other hand by the derivatives \(D_tZ(t-a)\), \(D_tZ(t-b)\), \(D_tZ(t-c)\).
-And likewise, if one considers \(x^3,\; x^2y,\; xy^2,\; y^3\), it results from the general formula that one will have only the second derivatives:
-\(D_t^2 Z(t-a),\,D_t^2 Z(t-b),\,D_t^2 Z(t-c)\) to be joined to the first derivatives and to the previous terms.
-
-\begin{center}
-\smallskip
-And the same pattern applies as one proceeds.
-\end{center}
-
+\noindent so that the coordinates $x$ and $y$ will be found to be linear functions of the two differences: $Z(t-a) - Z(t-c)$ and $Z(t-b) - Z(t-c)$. 
+Now observe that $x^2$, $xy$, $y^2$, being doubly periodic uniform functions with periods $2K$ and $2iK'$, can be expressed linearly in terms of these two differences and the derivatives $D_t Z(t-a)$, $D_t Z(t-b)$, $D_t Z(t-c)$. 
+Similarly, if we consider $x^3$, $x^2 y$, $xy^2$, $y^3$, it follows from the general formula that we need only adjoin the second derivatives $D_t^2 Z(t-a)$, $D_t^2 Z(t-b)$, $D_t^2 Z(t-c)$ to the first derivatives and to the
 % -- PAGE_BREAK --
+two differences. There are thus eight functions in all, entering linearly into the nine doubly periodic functions that I have just formed, and the relation of the third degree between the coordinates $x$ and $y$ is an immediate consequence. 
+I add that these coordinates contain eight arbitrary constants: the differences $a-c$, $b-c$ (since we can replace $t$ by $t-c$), the coefficients $A$, $B$, $A'$, $B'$, and finally $x_0$ and $y_0$. Adjoining the modulus of the transcendental function, we indeed obtain the maximum number, equal to nine, of the parameters of an arbitrary plane cubic.
 
-The various homogeneous functions of $x$ and $y$, up to degree $\mu$, whose number is $2+3+\cdots+\mu+1 = \frac{1}{2}(\mu^2+3\mu)$, and let $m$ denote the number of the transcendents. All these doubly periodic functions are expressible linearly by the differences $Z(t-a)-Z(t-b)$, $Z(t-b)-Z(t-c)$, $\ldots$, in number $m-1$, and then by the derivatives up to the order $\mu-1$ of the quantities $Z(t-a)$, that is, in all by $m-1+m(\mu-1)$ functions. In order to be able to perform the elimination of these functions, I impose the condition:
-\begin{equation}
-\frac{1}{2}(\mu^{2}+3\mu) = m + m(\mu-1) = m\,\mu
-\end{equation}
-which gives me \(\mu = 2m-3\), so that I reach by this route an order \(2m-3\), instead of obtaining the order \(m\). The procedure that succeeds in the case \(m=3\) therefore, in general, yields a degree too high, and I have completely given up, as a method of elimination. But the existence, at least, of an equation of this degree \(m\) is very easy to prove. Consider for this the arbitrary line \(ax+by+\gamma=0\), whose intersection points with the curve will be obtained by determining \(t\) from the equation:
+Let now:
+\begin{align*}
+x &= x_0 + A\,Z(t-a) + B\,Z(t-b) + C\,Z(t-c) + D\,Z(t-d),\\
+y &= y_0 + A'\,Z(t-a) + B'\,Z(t-b) + C'\,Z(t-c) + D'\,Z(t-d),\\
+z &= z_0 + A''\!Z(t-a) + B''\!Z(t-b) + C''\!Z(t-c) + D''\!Z(t-d),
+\end{align*}
+
+\noindent with the conditions
 \begin{equation*}
-ax+by+\gamma+\left(Aa+A' b\right)Z(t-a)+\left(Ba+B' b\right)Z(t-b)+\cdots = 0.
+\Sigma A = 0, \qquad \Sigma A' = 0, \qquad \Sigma A'' = 0.
 \end{equation*}
-The first member of this equation is a doubly periodic function which becomes infinite for the \(m\) values of \(t\) (inside the rectangle of periods \(2K\) and \(2K'\)); the curve cannot be cut by any straight line except at \(m\) points, hence it is of order \(m\). This same reasoning, applied to the polar, whose coordinates are
+
+\noindent The three coordinates $x$, $y$, $z$ together with the six quantities $x^2$, $y^2$, $z^2$, $xy$, $xz$, $yz$ can all be expressed as linear functions of the three differences $Z(t-a)-Z(t-d)$, $Z(t-b)-Z(t-d)$, $Z(t-c)-Z(t-d)$ and the four derivatives $D_t Z(t-a)$, etc. We thus have seven functions in the expression of nine quantities, which are therefore linked by two equations, so that these quantities represent the intersection of two surfaces of the second order. As above, we see that they contain the maximum number of arbitrary parameters that such a curve has, which is equal to sixteen.
+
+I return to plane geometry to consider the curves of \textit{Clebsch}, whose coordinates are elliptic functions of a parameter, which I take in the following form:
+\begin{align*}
+x &= x_0 + A\,Z(t-a) + B\,Z(t-b) + \cdots + L\,Z(t-l),\\
+y &= y_0 + A'Z(t-a) + B'Z(t-b) + \cdots + L'Z(t-l),
+\end{align*}
+
+\noindent always assuming:
 \begin{equation*}
-X = -\,\frac{y'}{xy'-x'y}, \qquad Y = \frac{x'}{xy'-x'y},
+\Sigma A = 0, \qquad \Sigma A' = 0.
 \end{equation*}
-determines its degree. And indeed the intersections of this second curve with the line \(\alpha X+\beta Y+\gamma=0\) are given by the equation
+
+\noindent The success of the preceding method in the case of the cubic led me to try to establish by the same route that $x$ and $y$ satisfy an algebraic equation of degree equal to the number of transcendentals: $Z(t-a)$, $Z(t-b)$, \ldots $Z(t-l)$. 
+But things then proceed less simply. Consider indeed
+% -- PAGE_BREAK --
+the various homogeneous functions of $x$ and $y$, up to degree $\mu$, whose number will be $2+3+\cdots+\mu+1 = \frac{1}{2}(\mu^2+3\mu)$, and let $m$ be the number of transcendentals. 
+All these doubly periodic functions can be expressed linearly in terms of the differences $Z(t-a)-Z(t-l)$, $Z(t-b)-Z(t-l)$, \ldots (numbering $m-1$), and the derivatives up to order $\mu-1$ of the quantities $Z(t-a)$, giving in total $m-1+m(\mu-1)$ functions. 
+In order to be able to carry out the elimination of these functions, I impose the condition:
 \begin{equation*}
--\alpha y' + \beta x' + \gamma\,(xy'-yx') = 0,
+\tfrac{1}{2}(\mu^2+3\mu) = m + m(\mu-1) = m\mu
 \end{equation*}
-and you see that its first member is again a function doubly periodic, admitting the infinite double points \(t=a,b,\dots,l\); hence there are \(2m\) roots and therefore \(2m\) intersection points. Knowing the order of the polar of Clebsch, \(\delta=2m\), the number \(d\) of double points of these curves follows immediately, as a consequence of the relation
-\begin{equation}
-2d+\delta = m(m-1).
-\end{equation}
+
+\noindent which gives me $\mu = 2m-3$, so that I arrive by this route at a curve of order $2m-3$, instead of obtaining order $m$. The procedure which succeeds in the case $m=3$ therefore gives in general a degree too high, and I had to abandon it entirely as a method of elimination. But the existence, at least, of an equation of degree $m$ is proved very easily. To see this, consider an arbitrary line $\alpha x + \beta y + \gamma = 0$, whose points of intersection with the curve will be obtained by determining $t$ from the equation:
+\begin{equation*}
+\alpha x_0 + \beta y_0 + \gamma + (A\alpha + A'\beta)Z(t-a) + (B\alpha + B'\beta)Z(t-b) + \cdots = 0.
+\end{equation*}
+
+\noindent The left-hand side of this equation is a doubly periodic function which becomes infinite for the $m$ values:
+\begin{equation*}
+t = a, \quad b, \quad c, \quad \ldots \quad l.
+\end{equation*}
+
+\noindent It can therefore vanish, by a well-known theorem of the theory of elliptic functions, only for $m$ values of $t$ in the interior of the rectangle of periods $2K$ and $2iK'$. Since the curve cannot be cut in more than $m$ points by any line, it is indeed of order $m$.
+
+Applying this same reasoning to the polar curve, whose coordinates are:
+\begin{equation*}
+X = \frac{-y'}{xy'-x'y}, \qquad Y = \frac{x'}{xy'-x'y}
+\end{equation*}
+
+\noindent determines the degree.
+
+Indeed, the intersections of this second curve with the line $\alpha X + \beta Y + \gamma = 0$ are given by the equation:
+\begin{equation*}
+-\alpha y' + \beta x' + \gamma(xy'-yx') = 0,
+\end{equation*}
+
+\noindent and we see that its left-hand side is a doubly periodic function admitting double infinities at $t=a$, $b$, \ldots $l$, so that there are $2m$ roots, and consequently $2m$ points of intersection. 
+Knowing the order of the polar of the curves of \textit{Clebsch}, $\delta = 2m$, the number $d$ of double points of these curves follows immediately, as a consequence of the relation
+% -- PAGE_BREAK --
+$2d + \delta = m(m-1)$, given in my course on analysis (page 385); we thus find by an easy route the fundamental proposition: $d = \frac{1}{2}m(m-3)$ demonstrated by \textit{Clebsch} in vol.\ 63 of this journal, p.\ 189.
+
 Paris, 29 June 1876.
 
+\bigskip
+\hrule
+\bigskip
+
+\noindent \textbf{P.\ S.} The determination of the inflection points of the plane cubic, and of the stationary points of the quadric in space, depends on the following equations:
+\begin{equation*}
+\begin{vmatrix}
+Z'(t-a)-Z'(t-c), & Z'(t-b)-Z'(t-c) \\
+Z''(t-a)-Z''(t-c), & Z''(t-b)-Z''(t-c)
+\end{vmatrix}
+= 0
+\end{equation*}
+
+\noindent and:
+\begin{equation*}
+\begin{vmatrix}
+Z'(t-a)-Z'(t-d), & Z'(t-b)-Z'(t-d), & Z'(t-c)-Z'(t-d) \\
+Z''(t-a)-Z''(t-d), & Z''(t-b)-Z''(t-d), & Z''(t-c)-Z''(t-d) \\
+Z'''(t-a)-Z'''(t-d), & Z'''(t-b)-Z'''(t-d), & Z'''(t-c)-Z'''(t-d)
+\end{vmatrix}
+= 0.
+\end{equation*}
+
+\noindent I proposed to calculate the determinants that form the left-hand sides, and I found the following expressions. For brevity, let
+\begin{align*}
+\Phi(a,b,c\;) &= H(a-b)H(a-c)H(b-c),\\
+\Phi(a,b,c,d) &= H(a-b)H(a-c)H(a-d)\\
+&\quad H(b-c)H(b-d)\\
+&\quad H(c-d),
+\end{align*}
+
+\noindent the first determinant is:
+\begin{equation*}
+H'(0)^5 \frac{\Phi(a,b,c)H(3t-a-b-c)}{[H(t-a)H(t-b)H(t-c)]^3}
+\end{equation*}
+
+\noindent and the second:
+\begin{equation*}
+H'(0)^9 \frac{\Phi(a,b,c,d)H(4t-a-b-c-d)}{[H(t-a)H(t-b)H(t-c)H(t-d)]^4}\,.
+\end{equation*}
+
+\noindent The beautiful results discovered by \textit{Clebsch} are the consequence of these expressions, which led me to consider in general the determinant with $n-1$ columns:
+\begin{equation*}
+\begin{vmatrix}
+Z'(t-a)-\; Z'(t-l), & Z'(t-b)-\; Z'(t-l), & \cdots & Z'(t-k)-\; Z'(t-l) \\
+Z''(t-a)-\; Z''(t-l), & Z''(t-b)-\; Z''(t-l), & \ldots & Z''(t-k)-\; Z''(t-l) \\
+\vdots & \vdots & & \vdots \\
+Z^{n-1}(t-a)-Z^{n-1}(t-l), & Z^{n-1}(t-b)-Z^{n-1}(t-l), & \ldots & Z^{n-1}(t-k)-Z^{n-1}(t-l)
+\end{vmatrix}
+\end{equation*}
 
 % -- PAGE_BREAK --
 
-\textbf{P.\,S.} The determination of the inflection points of the plane cubic, and of the stationary points of the quadric in space, depend on the following equations:
+\noindent where $a$, $b$, \ldots $k$, $l$ are $n$ constants. If we set as before:
+\begin{align*}
+\Phi(a,b,\ldots k, l) &= H(a-b)H(a-c)\ldots H(a-l)\\
+&\quad H(b-c)\ldots H(b-l)\\
+&\quad \cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\quad\cdot\\
+&\quad H(k-l)
+\end{align*}
+
+\noindent we find that its value is:
 \begin{equation*}
-\left|\begin{array}{cc}
-Z'(t-a)-Z'(t-c) & Z'(t-b)-Z'(t-c) \\
-Z''(t-a)-Z''(t-c) & Z''(t-b)-Z''(t-c)
-\end{array}\right| = 0
-\end{equation*}
-and:
-\begin{equation*}
-\left|\begin{array}{ccc}
-Z'(t-a)-Z'(t-d) & Z'(t-b)-Z'(t-d) & Z'(t-c)-Z'(t-d) \\
-Z''(t-a)-Z''(t-d) & Z''(t-b)-Z''(t-d) & Z''(t-c)-Z''(t-d) \\
-Z'''(t-a)-Z'''(t-d) & Z'''(t-b)-Z'''(t-d) & Z'''(t-c)-Z'''(t-d)
-\end{array}\right| = 0.
+\mu\, H'(0)^{\frac{1}{2}(n-1)(n+2)} \frac{\Phi(a,b,\ldots k,l)\,H(nt-a-b-\cdots-l)}{[H(t-a)H(t-b)\ldots H(t-l)]^n}
 \end{equation*}
 
-I have proposed to calculate the determinants which form the first members, and I have found the following expressions. For brevity, let
-\begin{equation*}
-\Phi(a,b,c) = H(a-b)\,H(a-c)\,H(b-c),
-\end{equation*}
-\begin{equation*}
-\Phi(a,b,c,d) = H(a-b)\,H(a-c)\,H(a-d)\,H(b-c)\,H(b-d)\,H(c-d),
-\end{equation*}
-the first determinant is:
-\begin{equation*}
-H'(0)^5\,\frac{\Phi(a,b,c)\,H(3t-a-b-c)}{[H(t-a)\,H(t-b)\,H(t-c)]^3},
-\end{equation*}
-and the second:
-\begin{equation*}
-H'(0)^9\,\frac{\Phi(a,b,c,d)\,H(4t-a-b-c-d)}{[H(t-a)\,H(t-b)\,H(t-c)\,H(t-d)]^4}.
-\end{equation*}
+\noindent $\mu$ denoting a numerical factor.
 
-The beautiful results discovered by Clebsch are the consequence of these expressions, which led me to consider in general the determinant with $n-1$ columns:
-\begin{equation*}
-\left|\begin{array}{cccc}
-Z'(t-a)-Z'(t-l) & Z'(t-b)-Z'(t-l) & \cdots & Z'(t-k)-Z'(t-l) \\
-Z''(t-a)-Z''(t-l) & Z''(t-b)-Z''(t-l) & \cdots & Z''(t-k)-Z''(t-l) \\
-\vdots & \vdots & \ddots & \vdots \\
-Z^{(n-1)}(t-a)-Z^{(n-1)}(t-l) & Z^{(n-1)}(t-b)-Z^{(n-1)}(t-l) & \cdots & Z^{(n-1)}(t-k)-Z^{(n-1)}(t-l)
-\end{array}\right| = 0.
-\end{equation*}
+Paris, 29 December 1876.
 
-% -- PAGE_BREAK --
-where $a, b, \ldots, k, l$ are $n$ constants. If one defines as before:
-\begin{equation*}
-\Phi(a, b, \dots, k, l) = H(a-b)\,H(a-c)\cdots H(a-l)\; H(b-c)\cdots H(b-l)\;\cdots\; H(k-l)
-\end{equation*}
-one finds that it has the value:
-\begin{equation*}
-\mu\, H'(0)^{\frac{1}{2}(n-1)(n+2)}\, \frac{\Phi(a, b, \dots, k, l)\, H(nt - a - b - \cdots - l)}{[H(t-a)\, H(t-b) \cdots H(t-l)]^{n}}
-\end{equation*}
-$\mu$ denoting a numerical factor.
-Paris, December 29, 1876.
+
+\vspace{1in}
+\begin{center}
+\raisebox{0.5ex}{\rule{1in}{0.5pt}}\quad$\bullet$\quad$\diamond$\quad$\bullet$\quad\raisebox{0.5ex}{\rule{1in}{0.5pt}}
+\end{center}
+
+\newpage
+\section*{Translator's Notes}
+
+\vspace{1em}
+\noindent\textbf{Original paper.} Hermite, Ch. (1877).
+Extrait d'une lettre de M. Ch. Hermite adressée à M. L. Fuchs.
+\textit{Journal für die reine und angewandte Mathematik}, 82, 343--347. \\[0.5em]
+EuDML: \url{http://eudml.org/doc/148317}
+
+\vspace{1em}
+
+\noindent This paper is cited by Frobenius and Stickelberger in their derivation of the Frobenius-Stickelberger determinant formula, an important identity in elliptic function theory which is now known to form canonical Hamiltonians for integrable systems.
+
+\vspace{1em}
+
+\noindent{Translated by K. Khazanzheiev and G. Hesketh, March 2026.}
+
+\end{document}
+
 \end{document}
